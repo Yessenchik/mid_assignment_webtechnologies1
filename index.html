@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mid Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://github.com">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="container mt-4" id="home">
+    <h1>Welcome to My Portfolio</h1>
+</header>
+
+<section class="container my-4">
+    <p>
+        Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, a.
+    </p>
+</section>
+
+<section class="container my-4" aria-labelledby="highlights-title">
+  <h2 id="highlights-title" class="mb-3">Highlights</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Fast & Responsive</h5>
+          <p class="card-text mb-0">Built with Bootstrap grid and utilities.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Clean Components</h5>
+          <p class="card-text mb-0">Cards, forms, navbar, and modal.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Accessible</h5>
+          <p class="card-text mb-0">Labels, alt text, and ARIA where useful.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-4">
+    <h2>Columns</h2>
+    <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+            <div class="p-3 bg-primary text-white rounded-3">Column 1</div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="p-3 bg-success text-white rounded-3">Column 2</div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+            <div class="p-3 bg-warning text-dark rounded-3">Column 3</div>
+        </div>
+    </div>
+</section>
+<section class="container my-4" aria-labelledby="carousel-title">
+  <h2 id="carousel-title" class="mb-3">Showcase</h2>
+  <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner rounded-3 shadow-sm">
+      <div class="carousel-item active">
+        <img src="images/crypto.png" class="d-block w-100" alt="Crypto Dashboard screenshot">
+      </div>
+      <div class="carousel-item">
+        <img src="images/snake.png" class="d-block w-100" alt="Snake Game screenshot">
+      </div>
+      <div class="carousel-item">
+        <img src="images/calendar.png" class="d-block w-100" alt="Calendar App screenshot">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<main class="container my-5" id="projects">
+    <div class="row">
+        <div class="col-lg-8">
+            <h2>My Projects (Vue.js + Quasar)</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100">
+                        <a href="http://localhost:9001/#/crypto" class="stretched-link" role="button" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/crypto.png" data-title="Crypto Dashboard" data-url="http://localhost:9001/#/crypto">
+                            <img src="images/crypto.png" class="card-img-top" alt="Crypto Dashboard" />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">API from coingecko.com shows Crypto Dashboard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100">
+                        <a href="http://localhost:9001/#/snake" class="stretched-link" role="button" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/snake.png" data-title="Snake Game" data-url="http://localhost:9001/#/snake">
+                            <img src="images/snake.png" class="card-img-top" alt="Snake Game" />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">There is shown the legendary Snake Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100">
+                        <a href="http://localhost:9001/#/calendar" class="stretched-link" role="button" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/calendar.png" data-title="Calendar App" data-url="http://localhost:9001/#/calendar">
+                            <img src="images/calendar.png" class="card-img-top" alt="Calendar App" />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Well-designed Calendar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="col-lg-4" id="contact">
+            <h2>About Me</h2>
+            <ul class="list-group mb-4">
+                <li class="list-group-item">Student: Yessen Zhumagali</li>
+                <li class="list-group-item">Group: SE-2419</li>
+                <li class="list-group-item">Email: esen@gmail.com</li>
+                <li class="list-group-item">Phone: +7 777 777 7777</li>
+            </ul>
+
+            <h3>Contact</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your name" />
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" rows="3" class="form-control" placeholder="Your message"></textarea>
+                </div>
+                <button type="button" class="btn btn-dark">Send</button>
+            </form>
+        </aside>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <small>© 2025 yessencee</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0" id="modalBody"></div>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('[data-bs-target="#imageModal"]').forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+            const src = this.getAttribute('data-img');
+            const title = this.getAttribute('data-title') || '';
+            const url = this.getAttribute('data-url');
+            const modalBody = document.getElementById('modalBody');
+            document.getElementById('imageModalLabel').textContent = title;
+            if (url) {
+                // Build iframe and fallback UI
+                const openLink = `<a href="${url}" target="_blank" rel="noopener">Open in new tab ↗</a>`;
+                modalBody.innerHTML = `
+            <div class="ratio ratio-16x9">
+              <iframe src="${url}" class="embed-frame" style="border:0;" referrerpolicy="no-referrer"></iframe>
+            </div>
+            <div class="embed-hint text-muted small px-3 py-2">If you see a white screen, this page may block embedding (X-Frame-Options/CSP). ${openLink}</div>
+          `;
+                // Try to detect successful load to hide the hint
+                const iframe = modalBody.querySelector('iframe');
+                const hint = modalBody.querySelector('.embed-hint');
+                let loaded = false;
+                iframe.addEventListener('load', function () {
+                    loaded = true;
+                    hint.style.display = 'none';
+                });
+                // After 2.5s, if not loaded, keep hint visible
+                setTimeout(function(){ if (!loaded) { hint.style.display = 'block'; } }, 2500);
+            } else if (src) {
+                modalBody.innerHTML = '<img src="' + src + '" alt="' + title + '" class="w-100 d-block modal-full-img">';
+            }
+        });
+    });
+</script>
+</body>
+</html>
